@@ -18,42 +18,6 @@ AI Health Assistant is an advanced project leveraging Artificial Intelligence (A
 - **Pinecone**: A vector database for fast and relevant data retrieval, integrated for search and context enrichment.
 - **Vercel**: Hosting platform for API deployment.
 
-## Setup Instructions
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/ai-health-assistant.git
-   cd ai-health-assistant
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Set up environment variables:
-
-   - **GEMINI_API_KEY**: Your Gemini API key from Google.
-
-   - **GEMINI_MODEL**: The model you're using
-
-   - **PINECONE_API_KEY**: Your Pinecone API key.
-
-   Create a `.env` file in the root of your project with the following content:
-
-   ```plaintext
-   GEMINI_API_KEY=your-gemini-api-key
-   GEMINI_MODEL=gemini
-   PINECONE_API_KEY=your-pinecone-api-key
-   ```
-
-4. Run the project:
-
-   ```bash
-   npm run dev
-   ```
 
 
 ## How It Works
