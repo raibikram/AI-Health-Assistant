@@ -1,12 +1,3 @@
-# <<<<<<< HEAD
-
-<<<<<<< HEAD
-
-# AI_Health_Assistant
-
-# AI Health Assistant: An AI-powered system for analyzing medical reports, answering queries, and providing insights. Built with Gemini AI, LangChain, RAG, and Pinecone to offer real-time responses and relevant data retrieval for healthcare professionals and patients.
-
-> > > > > > > 0550521 (Resolved merge conflicts)
 
 # AI Health Assistant - Medical Report Analysis and Query System
 
