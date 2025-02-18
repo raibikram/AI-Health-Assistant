@@ -45,7 +45,7 @@ AI Health Assistant is an advanced project leveraging Artificial Intelligence (A
 
    ```plaintext
    GEMINI_API_KEY=your-gemini-api-key
-   GEMINI_MODEL=gemini-2.0-flash
+   GEMINI_MODEL=gemini
    PINECONE_API_KEY=your-pinecone-api-key
    ```
 
@@ -55,7 +55,6 @@ AI Health Assistant is an advanced project leveraging Artificial Intelligence (A
    npm run dev
    ```
 
-5. Access the API at `http://localhost:3000/api/medichatgemini`.
 
 ## How It Works
 
