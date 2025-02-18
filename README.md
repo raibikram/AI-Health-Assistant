@@ -1,3 +1,13 @@
+# <<<<<<< HEAD
+
+<<<<<<< HEAD
+
+# AI_Health_Assistant
+
+# AI Health Assistant: An AI-powered system for analyzing medical reports, answering queries, and providing insights. Built with Gemini AI, LangChain, RAG, and Pinecone to offer real-time responses and relevant data retrieval for healthcare professionals and patients.
+
+> > > > > > > 0550521 (Resolved merge conflicts)
+
 # AI Health Assistant - Medical Report Analysis and Query System
 
 AI Health Assistant is an advanced project leveraging Artificial Intelligence (AI) to process and analyze medical reports. This project is designed to assist healthcare professionals and patients by answering queries, retrieving relevant information, and generating insights from clinical reports. It uses **Gemini AI**, **LangChain**, **Retrieval-Augmented Generation (RAG)**, and other technologies to enhance the analysis process and provide accurate, contextually relevant answers based on historical data.
@@ -21,36 +31,38 @@ AI Health Assistant is an advanced project leveraging Artificial Intelligence (A
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/your-username/ai-health-assistant.git
-    cd ai-health-assistant
-    ```
+   ```bash
+   git clone https://github.com/your-username/ai-health-assistant.git
+   cd ai-health-assistant
+   ```
 
 2. Install dependencies:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 3. Set up environment variables:
 
-    - **GEMINI_API_KEY**: Your Gemini API key from Google.
-    - **GEMINI_MODEL**: The model you're using (e.g., `gemini-2.0-flash`).
-    - **PINECONE_API_KEY**: Your Pinecone API key.
+   - **GEMINI_API_KEY**: Your Gemini API key from Google.
 
-    Create a `.env` file in the root of your project with the following content:
+   - **GEMINI_MODEL**: The model you're using
 
-    ```plaintext
-    GEMINI_API_KEY=your-gemini-api-key
-    GEMINI_MODEL=gemini-2.0-flash
-    PINECONE_API_KEY=your-pinecone-api-key
-    ```
+   - **PINECONE_API_KEY**: Your Pinecone API key.
+
+   Create a `.env` file in the root of your project with the following content:
+
+   ```plaintext
+   GEMINI_API_KEY=your-gemini-api-key
+   GEMINI_MODEL=gemini-2.0-flash
+   PINECONE_API_KEY=your-pinecone-api-key
+   ```
 
 4. Run the project:
 
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
 
 5. Access the API at `http://localhost:3000/api/medichatgemini`.
 
@@ -79,8 +91,8 @@ Content-Type: application/json
   }
 
 
-  ```
-## License
+```
 
+## License
 
 This project is currently not licensed. Please contact the author for permissions.
