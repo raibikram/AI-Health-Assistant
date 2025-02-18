@@ -1,10 +1,11 @@
-import React, { ChangeEvent, MouseEvent, useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import imageCompression from "browser-image-compression";
+import Image from "next/image";
 
 type Props = {
   onReportConfirmation: (data: string) => void;
@@ -27,7 +28,7 @@ function ReportComponent({ onReportConfirmation }: Props) {
 
     try {
       return await imageCompression(file, options);
-    } catch (error) {
+    } catch {
       toast({
         description: "Image compression failed.",
         variant: "destructive",
@@ -85,7 +86,7 @@ function ReportComponent({ onReportConfirmation }: Props) {
     }
   }
 
-  async function extractDetails(event: MouseEvent<HTMLButtonElement>) {
+  async function extractDetails() {
     if (!base64File) {
       toast({
         description: "Upload a valid report",
@@ -115,6 +116,7 @@ function ReportComponent({ onReportConfirmation }: Props) {
         });
       }
     } catch (error) {
+      console.error("❌ Error extracting report details:", error);
       toast({
         description: "Something went wrong. Try again later.",
         variant: "destructive",
@@ -170,10 +172,12 @@ function ReportComponent({ onReportConfirmation }: Props) {
           <div className="mt-4">
             <h3 className="font-semibold">Selected File Preview:</h3>
             {fileType === "image" ? (
-              <img
+              <Image
                 src={base64File}
                 alt="Preview"
                 className="max-w-[100px] mt-2 rounded-lg"
+                width={100}
+                height={100}
               />
             ) : (
               <p className="text-sm text-gray-600">

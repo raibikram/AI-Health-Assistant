@@ -5,6 +5,7 @@ import { Pinecone } from "@pinecone-database/pinecone";
 
 import { streamText, StreamTextResult, Message } from "ai";
 
+
 // Ensure environment variables are loaded
 if (!process.env.GEMINI_API_KEY || !process.env.GEMINI_MODEL) {
   throw new Error(
@@ -102,17 +103,20 @@ ${retrievals}
     } else {
       throw new Error("Failed to stream response from Gemini.");
     }
-  } catch (error: any) {
-    console.error("❌ Error in medichatgemini API:", error.message);
+  } catch (error) {
+    console.error("❌ Error in medichatgemini API:", error);
 
-    // Enhanced error response
+    // Ensure error is an instance of Error before accessing properties
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
+    const errorStack = error instanceof Error ? error.stack : "";
+
     return new Response(
       JSON.stringify({
         error: "Internal Server Error",
-        message: error.message,
-        stack: error.stack, // Optionally include stack trace for debugging
+        message: errorMessage,
+        stack: errorStack, // Optionally include stack trace for debugging
       }),
       { status: 500 }
     );
-  }
-};
+}
+}
