@@ -34,7 +34,7 @@ const ChatComponent = ({ reportData }: Props) => {
   };
 
   return (
-    <div className="relative h-full bg-muted/50 flex flex-col min-h-[50vh] p-4 gap-4">
+    <div className="relative bg-muted/50 flex flex-col min-h-[30ssvh] p-4 gap-4">
       <Badge
         variant={"outline"}
         className={`absolute right-3 top-3 ${
@@ -45,7 +45,7 @@ const ChatComponent = ({ reportData }: Props) => {
       </Badge>
 
       {/* Chat messages container (flows from bottom to top) */}
-      <div className="flex flex-col gap-4 min-h-[75vh] overflow-y-auto mt-5">
+      <div className="flex flex-col gap-4 min-h-[60vh] overflow-y-auto mt-5">
         {/* Loading Indicator */}
         {!reportData && (
           <div className="absolute z-10 h-full w-full flex items-center justify-center p-6">
