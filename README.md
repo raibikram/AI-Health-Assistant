@@ -28,26 +28,6 @@ AI Health Assistant is an advanced project leveraging Artificial Intelligence (A
 - **AI Analysis**: The system uses Gemini AI to analyze the report, augmenting it with relevant clinical findings.
 - **Output**: The AI responds with an answer to the user's query, based on both the clinical report and additional data retrieved.
 
-## Example Request
-
-```bash
-POST /api/medichatgemini
-Content-Type: application/json
-
-{
-  "messages": [
-    {
-      "role": "user",
-      "content": "What are the potential risks associated with the patient's condition?"
-    }
-  ],
-  "data": {
-    "reportData": "The patient presented with a history of left knee pain, swelling, and elevated blood pressure (130/90). Further assessment is ongoing."
-  }
-
-
-```
-
 ## License
 
 This project is currently not licensed. Please contact the author for permissions.
