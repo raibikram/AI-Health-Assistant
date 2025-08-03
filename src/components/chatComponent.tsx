@@ -34,7 +34,7 @@ const ChatComponent = ({ reportData }: Props) => {
   };
 
   return (
-    <div className="relative bg-muted/50 flex flex-col min-h-[30ssvh] p-4 gap-4">
+    <div className="relative bg-muted/50 flex flex-col min-h-[60svh] p-4 gap-4">
       <Badge
         variant={"outline"}
         className={`absolute right-3 top-3 ${
